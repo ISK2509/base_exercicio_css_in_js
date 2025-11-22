@@ -1,29 +1,14 @@
-import styled from 'styled-components'
-import { Cores } from '../../styles'
+import { Container } from '../../styles'
+import FormHero, { HeroTitle } from './styles'
 
-const FormSearch = styled.form`
-  display: grid;
-  grid-template-columns: 1fr auto;
-  background-color: ${Cores.corSecundaria};
-  padding: 32px;
-  border-radius: 12px;
-  margin-top: 40px;
-`
+const Hero = () => (
+  <FormHero>
+    <Container>
+      <HeroTitle>
+        <h2>As melhores vagas para tecnologia, design e artes visuais</h2>
+      </HeroTitle>
+    </Container>
+  </FormHero>
+)
 
-export const ButtonSearch = styled.button`
-  background-color: ${Cores.corPrincipal};
-  border: 1px solid ${Cores.corPrincipal};
-  height: 40px;
-  padding: 0 16px;
-  font-size: 18px;
-  color: ${Cores.corSecundaria};
-  margin-left: 8px;
-  cursor: pointer;
-`
-
-export const InputSearch = styled.input`
-  padding: 0 16px;
-  outline-color: ${Cores.corPrincipal};
-`
-
-export default FormSearch
+export default Hero
